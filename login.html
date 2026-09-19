@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Responsive Login Form</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="h-screen bg-gradient-to-r from-green-400 to-emerald-600 flex items-center justify-center">
+<body class="min-h-screen bg-gradient-to-r from-green-400 to-emerald-600">
 
-    <img   class="w-100 -mb-35 " src="https://png.pngtree.com/png-clipart/20240326/original/pngtree-indoor-plant-flowerpot-png-image_14685403.png" alt="">
+    <div class="min-h-screen flex items-center justify-center px-5">
 
-    <div class="w-80 h-90 p-6 bg-white rounded-xl shadow-2xl">
-        <h1 class="text-2xl font-bold text-center mb-6 text-green-600">
-            LOGIN
-        </h1>
+        <!-- Left Plant -->
+        <img
+            src="https://png.pngtree.com/png-clipart/20240326/original/pngtree-indoor-plant-flowerpot-png-image_14685403.png"
+            class="hidden lg:block w-72 xl:w-96 -mb-28"
+            alt="Plant">
 
-        <form class="space-y-4">
+        <!-- Login Card -->
+        <div class="w-full max-w-sm bg-white rounded-2xl shadow-2xl p-8">
 
-            <div>
-                <label class="font-medium">Email</label>
-                <input
-                    type="email"
-                    placeholder="Enter Your Email"
-                    class="w-full mt-1 p-2 border rounded-md outline-none focus:ring-2 focus:ring-green-500">
-            </div>
+            <h1 class="text-3xl font-bold text-center text-green-600 mb-8">
+                LOGIN
+            </h1>
 
-            <div>
-                <label class="font-medium">Password</label>
-                <input
-                    type="password"
-                    placeholder="Enter Your Password"
-                    class="w-full mt-1 p-2 border rounded-md outline-none focus:ring-2 focus:ring-green-500">
-            </div>
+            <form class="space-y-5">
 
-            <button
-                class="w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition">
-                Submit
-            </button>
+                <div>
+                    <label class="font-medium text-gray-700">
+                        Email
+                    </label>
 
-        </form>
+                    <input
+                        type="email"
+                        placeholder="Enter Your Email"
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <div>
+                    <label class="font-medium text-gray-700">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter Your Password"
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <button
+                    class="w-full bg-green-500 hover:bg-green-600 transition text-white py-3 rounded-lg font-semibold">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Right Plant -->
+        <img
+            src="https://png.pngtree.com/png-clipart/20240326/original/pngtree-indoor-plant-flowerpot-png-image_14685403.png"
+            class="hidden lg:block w-72 xl:w-96 -mb-28"
+            alt="Plant">
+
     </div>
 
-    <img class="w-100 -mb-35 " src="https://png.pngtree.com/png-clipart/20240326/original/pngtree-indoor-plant-flowerpot-png-image_14685403.png" alt="">
-<script src="login.js"></script>
+    <script src="login.js"></script>
+
 </body>
 </html>

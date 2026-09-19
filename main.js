@@ -23,3 +23,9 @@ document.querySelector(".left").onclick = function () {
     document.querySelector('img').src = imges[index]
 
 };
+
+window.onload = function () {
+    document.querySelector(".card1").onclick = function () {
+        location.href = "mainPage2.html";
+    };
+};
